@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <ListView
+        android:id="@+id/location_listView"
+        android:layout_width="129dp"
+        android:layout_height="129dp"
+        android:layout_above="@+id/proximityAlert_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/retrieve_location_button" >
+
+    </ListView>
+    <!-- MapView layout and initial extent -->
+
+    <Button
+        android:id="@+id/retrieve_location_button"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Save Current  Location" />
+
+    <Button
+        android:id="@+id/delete_location_button"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/retrieve_location_button"
+        android:text="Delete All Locations" />
+
+    <Button
+        android:id="@+id/proximityAlert_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/delete_location_button"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/delete_location_button"
+        android:text="Radius Alert" />
+  	
+</RelativeLayout >
